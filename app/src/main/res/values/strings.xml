@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Tinder View Model</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continue_button">continue</string>
+    <string name="x">x</string>
+    <string name="back_arrow">&lt;</string>
+    <string name="my_email_is">My\nemail is</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="my_first_name_is">My first\nname is</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="name_appearance">This is how it will appear in Tinder</string>
+    <string name="my_birthday_is">My\nbirthday is</string>
+    <string name="birthday_month_hint">M M</string>
+    <string name="birthday_day_hint">D D</string>
+    <string name="birthday_year_hint">Y Y Y Y</string>
+    <string name="forward_slash">/</string>
+    <string name="public_age">Your age will be public</string>
+    <string name="i_am_a">I am a</string>
+    <string name="female">FEMALE</string>
+    <string name="male">MALE</string>
+    <string name="gender_consent">Show my gender on my profile</string>
+    <string name="my_school_is">My\nschool is</string>
+    <string name="school_name">School Name</string>
+    <string name="school_appearance">This is how it will appear in Tinder</string>
+    <string name="profile_complete">Profile\nComplete</string>
+    <string name="first_name">First Name:</string>
+    <string name="email">Email:</string>
+    <string name="birthday">Birthday:</string>
+    <string name="gender">Gender:</string>
+    <string name="school">School:</string>
+</resources>

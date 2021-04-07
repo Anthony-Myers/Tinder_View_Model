@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/back_to_name_button"
+        style="@style/Base.TextAppearance.AppCompat.Button.LargeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/my_birthday_is_text_view"
+        style="@style/TextAppearance.MaterialComponents.Headline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/my_birthday_is"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_to_name_button" />
+
+    <EditText
+        android:id="@+id/month_edit_text"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/birthday_month_hint"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_birthday_is_text_view"
+        app:layout_constraintEnd_toStartOf="@id/foward_slash_1"
+        android:maxLength="2"/>
+
+    <TextView
+        android:id="@+id/foward_slash_1"
+        style="@style/Base.Widget.AppCompat.TextView.SubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/forward_slash"
+        app:layout_constraintStart_toEndOf="@+id/month_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/my_birthday_is_text_view"
+        app:layout_constraintEnd_toStartOf="@id/day_edit_text"/>
+
+    <EditText
+        android:id="@+id/day_edit_text"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="@string/birthday_day_hint"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/foward_slash_1"
+        app:layout_constraintTop_toBottomOf="@+id/my_birthday_is_text_view"
+        android:maxLength="2"/>
+
+    <TextView
+        android:id="@+id/foward_slash_2"
+        style="@style/Base.Widget.AppCompat.TextView.SubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/forward_slash"
+        app:layout_constraintStart_toEndOf="@+id/day_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/my_birthday_is_text_view" />
+
+    <EditText
+        android:id="@+id/year_edit_text"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="@string/birthday_year_hint"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/foward_slash_2"
+        app:layout_constraintTop_toBottomOf="@+id/my_birthday_is_text_view"
+        android:maxLength="4"/>
+
+    <TextView
+        android:id="@+id/public_age_text_view"
+        style="@style/Base.Widget.AppCompat.TextView.SubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/public_age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/month_edit_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
